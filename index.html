@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header> <!-- header -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light  fixed-top  ">
+          <div class="container-fluid ">
+            <!-- logo -->
+            <div class="col-6 col-md-3"  id="logo">
+                <a href="index.html">BeautifulShop</a>
+            </div>
+            <div class="col-3 col-md-6" id="userData">
+                <li id="user"></li>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar-collapse -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+             
+              
+                <ul class="navbar-nav  mb-2 mb-lg-0  fixed-right" id="links">
+                    <li><a href="login.html">sign in</a></li>
+                    <li><a href="register.html">sign up </a></li>
+                </ul>
+                <ul class="navbar-nav  mb-2 mb-lg-0  fixed-right " id="menues">
+                    <li class="nav-item d-flex ">
+                        <i class="fas fa-shopping-cart">
+                            <span style="font-size: 11px;"  id="addCart"></span></i>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Card
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light  " id="dropdown">
+                        <div class="allItems"></div>
+                        
+                          <li><a class="dropdown-item menu-link" href="product.html">View all product</a></li>
+                          
+                        </ul>
+                      </li>
+                    <li><a href="#" id="logOut">Log out </a></li>
+
+                </ul>
+            </div> <!-- /navbar-collapse -->
+            
+           
+          </div>
+        </nav>
+        <!-- /navbar -->
+    
+      </header>
+   
+  <section class="allproduct">
+    <div class="container-fluid ">
+      <div class="search row mb-5">
+        <div class="col-12 col-md-6">
+        <select class="form-select " aria-label="Default select example" id="select">
+          <option selected value="" hidden >Fliter by!</option>
+          <option value="title">search by product</option>
+          <option value="categeory">search by categeory</option>
+          <option value="price">search by price</option>
+        </select>
+        </div>
+        <div class="col-12 col-md-6 d-flex form-search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="" type="submit" onclick="fliters()">Search</button>
+         
+      </div>
+      </div> <!-- search  -->
+
+        <div class="row" id="product">
+         
+        </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/user.js" ></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

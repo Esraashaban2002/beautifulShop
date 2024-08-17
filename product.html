@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header> <!-- header -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light  fixed-top ">
+      <div class="container-fluid ">
+        <!-- logo -->
+        <div class="col-6 col-md-3"  id="logo">
+            <a href="index.html">BeautifulShop</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar-collapse -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+ 
+            <ul class="navbar-nav  mb-2 mb-lg-0  fixed-right" id="links">
+                <li><a href="login.html">sign in</a></li>
+                <li><a href="register.html">sign up </a></li>
+            </ul>
+            <ul class="navbar-nav  mb-2 mb-lg-0  fixed-right " id="menues">
+                <li><a href="#" id="logOut">Log Out </a></li>
+            </ul>
+        </div> <!-- /navbar-collapse -->
+        
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+  </header>
+   
+  <section class="allproduct">
+    <div class="container-fluid ">
+      <h2 class="cardTitle">Card products</h2>
+        <div class="row"  id="product">
+          
+        </div>  <!-- row -->
+        <div id="totalPtice">Total Price : <span></span> $</div>
+    </div> <!-- container -->
+  </section>
+
+  <section class="allproduct">
+    <h2 class="cardTitle">Card favourate</h2>
+    <div class="container-fluid ">
+ 
+     <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+    <div class="swiper-wrapper productFavourt " id="swiper-wrapper-8629c1797c0d68bc " aria-live="polite" >
+ 
+    </div>
+    <div class="swiper-button-next swiper-button" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-8629c1797c0d68bc" aria-disabled="false"></div>
+    <div class="swiper-button-prev  swiper-button swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-8629c1797c0d68bc" aria-disabled="true"></div>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+    </div> <!-- container -->
+  </section>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 5,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>

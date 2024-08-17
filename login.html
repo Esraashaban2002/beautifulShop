@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+    <header> <!-- header -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light  fixed-top ">
+          <div class="container-fluid ">
+            <!-- logo -->
+            <div id="logo">
+                <a href="index.html">BeautifulShop</a>
+            </div>
+          </div>
+        </nav>
+        <!-- /navbar -->
+      </header>
+
+      <main>
+        <form class="row" id="form">
+
+            <h2 id="header">Login user </h2>
+
+            <div class="col-12">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" name="email" id="email">
+              <span class="d-block pb-3 ">Do you have an account? <a href="register.html">Register</a></span>
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" id="password" >
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input w-auto p-2 me-2" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Remend me 
+                  </label>
+                </div>
+              </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn " id="signin">Sign in</button>
+            </div>
+          </form>
+    </main>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
