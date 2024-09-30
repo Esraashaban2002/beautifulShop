@@ -171,6 +171,14 @@ main #form button:hover{
 .form-check-label{
     color: var(--color-pink);
 }
+@media (max-width:768px) {
+    main #form{
+        width: 100%;
+    }
+    main #form #header{
+        font-size: 40px;
+    }
+}
  /* ---------------------------allproduct --------------------------- */
 .form-search button{
     background-color: var(--color-pink);
