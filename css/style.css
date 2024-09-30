@@ -67,6 +67,9 @@ header nav #menues{
     visibility: hidden;
     background-color: #fff;
 }
+header nav #links{
+    background-color: #fff;
+}
 header nav #links a , header nav #menues a{
     font-size: 28px;
     padding: 10px;
