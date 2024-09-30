@@ -34,6 +34,20 @@ header nav #logo a{
     padding: 10px;
     margin: 0px 50px;
 }
+@media (max-width:768px) {
+    header nav #logo a{
+        font-size: 24px;
+        padding: 10px 5px;
+        margin: 0px;
+    }
+    header #user{
+        font-size: 18px;
+    }
+    header nav #menues li #addCart{
+        margin-right: 100px !important;
+    }
+  
+}
 header nav #userData{
     flex: 1 !important;
     text-align: center;
@@ -51,6 +65,7 @@ header nav #links , header nav #menues{
 }
 header nav #menues{
     visibility: hidden;
+    background-color: #fff;
 }
 header nav #links a , header nav #menues a{
     font-size: 28px;
@@ -60,6 +75,7 @@ header nav #links a , header nav #menues a{
 }
 header nav #menues li{
     position: relative;
+    padding: 0 10px;
 }
 header nav #menues li #addCart{
     display: none;
